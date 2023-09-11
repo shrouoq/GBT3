@@ -1,0 +1,5 @@
+.footer-container{
+    background-color: var(--color-footer);
+    margin-top: 80px;
+    padding: 100px 0;
+}

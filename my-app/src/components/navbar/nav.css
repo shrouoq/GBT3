@@ -1,0 +1,128 @@
+.navBar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.navBar-container .links-container{
+    display: flex;
+    gap: 30px;
+}
+
+
+.navBar-container .navBar-logo{
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.navBar-container .navBar-links a,
+.navBar-container .navBar-list a{
+    color: #fff;
+    margin-right: 25px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.navBar-container .navBar-links{
+    display: flex;
+} 
+
+.navBar-container .navBar-btns{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navBar-container .navBar-btns button{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.navBar-container .navBar-btns button:nth-child(1),
+.navBar-container .navBar-list button:nth-child(1){
+    background-color: transparent;
+}
+
+.navBar-container .navBar-btns button:nth-child(2),
+.navBar-container .navBar-list button:nth-child(2){
+    padding: 8px 13px;
+    border-radius: 5px;
+}
+
+.navBar-container .navBar-list{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--color-blog);
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 30px 30px 30px 0;
+}
+
+.navBar-container .navBar-list a{
+    margin-right: 0;
+    display: block;
+}
+
+.navBar-container .navBar-list .list-btns button:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.navBar-container .navBar-list .list-btns button{
+    display: none;
+    text-align: right;
+    margin-left: auto;
+}
+
+.navBar-container .bars{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+/* ------------media queries------------ */
+
+@media(max-width:767px){
+    .navBar-container .navBar-list p a{
+        margin-bottom: 20px;
+    }
+    .navBar-container .navBar-btns button{
+        display: none;
+    }
+    .navBar-container .navBar-list .list-btns button{
+        display: block;
+    }
+}
+
+@media(min-width:768px){
+    .navBar-container .navBar-list p:not(:last-of-type) a{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:991px){
+    .navBar-container .navBar-links{
+        display: none;
+    }
+    .navBar-container .bars{
+        display: block;
+    }
+    .navBar-container .navBar-list{
+        display: block;
+        top: 80px;
+    }
+}
+
+@media(min-width:992px){
+    .navBar-container .navBar-list{
+        display: none;
+    }
+}

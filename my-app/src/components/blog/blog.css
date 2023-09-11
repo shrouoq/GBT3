@@ -1,0 +1,35 @@
+.blog-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-container .pic{
+    width: 100%;
+    height: 30%;
+}
+
+.blog-container .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.blog-container .data{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--color-blog);
+    height: 100%;
+    padding: 25px;
+}
+
+.blog-container .data .box p{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.blog-container .data h1{
+    font-size: 25px;
+    margin-top: 20px;
+}

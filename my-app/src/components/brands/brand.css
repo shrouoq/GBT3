@@ -1,0 +1,21 @@
+.brands-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    margin: 70px 0;
+}
+
+.brands-container .pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-container .pic img{
+    width:100px;
+    height: 25px;
+    object-fit: contain;
+}
+

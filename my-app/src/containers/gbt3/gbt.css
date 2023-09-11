@@ -1,0 +1,64 @@
+.gbt-container{
+
+    padding: 30px;
+
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.gbt-container .gbt-part2{
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gbt-container .gbt-part2 h1{
+    max-width: 500px;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.gbt-container .gbt-part2 a{
+    color: var( --color-subtext);
+}
+
+.gbt-container .gbt-part3{
+    display: flex;
+    justify-content: center;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+}
+
+.gbt-container .gbt-part3 .features-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+@media(max-width:767px){
+    .gbt-container .gbt-part2{
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+
+    .gbt-container .gbt-part3{
+        flex-direction: column;
+    }
+}
